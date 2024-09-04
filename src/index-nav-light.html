@@ -1,0 +1,93 @@
+<!-- Start Navbar -->
+@@include("partials/main.html")
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Techwind"})
+
+    <!-- Css -->
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    @@include("partials/head-css.html")
+</head>
+@@include("partials/body.html")
+
+<nav id="topnav" class="defaultscroll is-sticky">
+    <div
+        class="w-full mx-auto px-3 sm:px-4 md:px-4 lg:px-[45px] xl:px-[45px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] xl:max-w-[1250px] relative">
+        <!-- Logo container-->
+        <a class="me-[15px] pe-[15px] leading-[68px] float-left py-0" href="index">
+            <span class="inline-block dark:hidden">
+
+                <img src="https://fundu-space-sfo3-dev.sfo3.digitaloceanspaces.com/localhost/appmint/appmint-icon.png?AWSAccessKeyId=Y2F2FXM2ULLLG6K362KF&Expires=2040386406&Signature=ZfGD2%2BCwdRgGlTMYpIpmn%2Bagxyg%3D"
+                    class=" w-6 h-6 inline-block" height="24" alt="">
+            </span>
+            <img src="https://fundu-space-sfo3-dev.sfo3.digitaloceanspaces.com/localhost/appmint/appmint-icon.png?AWSAccessKeyId=Y2F2FXM2ULLLG6K362KF&Expires=2040386406&Signature=ZfGD2%2BCwdRgGlTMYpIpmn%2Bagxyg%3D"
+                height="24" class="hidden dark:inline-block w-6 h-6" alt="">
+        </a>
+
+        <!-- End Logo container-->
+        <div class="menu-extras float-right">
+            <div class="menu-item">
+                <!-- Mobile menu toggle-->
+                <button class="navbar-toggle relative mt-[30px] me-0 ms-[10px] block mb-[26px]" id="isToggle" onclick="toggleMenu()">
+                    <svg fill="currentColor" class="inline-block" width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>icn/menu</title>
+                        <path
+                            d="M2 3h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z"
+                            id="a" />
+                    </svg>
+                </butt>
+                <!-- End mobile menu toggle-->
+            </div>
+        </div>
+
+
+        <div id="navigation"
+            class="max-lg:max-h-[400px] max-lg:shadow-sm max-lg:absolute max-lg:top-[74px] max-lg:hidden max-lg:h-auto max-lg:w-full max-lg:bg-white max-lg:overflow-auto dark:max-lg:bg-[rgb(15,23,42)]">
+            <!-- Navigation Menu-->
+            <ul
+                class="navigation-menu nav-light  m-0 p-0 list-none  *:relative *:my-0 *:mx-[10px] *:block *:float-left max-lg:float-none max-lg:*:float-none">
+                <li>
+                    <a href="index"
+                        class="block bg-transparent px-[14px] text-sm font-bold uppercase leading-[1.5rem] tracking-[1px] text-[rgb(79,70,229)] lg:min-h-[62px] lg:py-[25px] max-lg:py-[10px]">Home</a>
+                </li>
+                <li>
+
+                    <a href=""
+                        class="block bg-transparent px-[14px] text-sm font-bold uppercase leading-[1.5rem] tracking-[1px] text-[rgb(79,70,229)] lg:min-h-[62px] lg:py-[25px]">Landings</a>
+
+                </li>
+
+
+
+                <li>
+                    <a href="javascript:void(0)"
+                        class="block bg-transparent px-[14px] text-sm font-bold uppercase leading-[1.5rem] tracking-[1px] text-[rgb(79,70,229)] lg:min-h-[62px] lg:py-[25px]">Portfolio</a>
+                </li>
+
+                <li class="">
+                    <a href="javascript:void(0)"
+                        class="block bg-transparent px-[14px] text-sm font-bold uppercase leading-[1.5rem] tracking-[1px] text-[rgb(79,70,229)] lg:min-h-[62px] lg:py-[25px]">Docs</a>
+                </li>
+
+                <li><a href="contact"
+                        class="block bg-transparent px-[14px] text-sm font-bold uppercase leading-[1.5rem] tracking-[1px] text-[rgb(79,70,229)] lg:min-h-[62px] lg:py-[25px]">Contact</a>
+                </li>
+            </ul><!--end navigation menu-->
+        </div><!--end navigation-->
+    </div><!--end container-->
+</nav>
+<!--end header-->
+<!-- End Navbar -->
+
+@@include("partials/switcher.html")
+
+<!-- JAVASCRIPTS -->
+<script src="assets/libs/tobii/js/tobii.min.js"></script>
+<script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+<script src="assets/libs/feather-icons/feather.min.js"></script>
+@@include("partials/script-file.html")
+</body>
+
+</html>

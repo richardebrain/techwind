@@ -1,0 +1,58 @@
+@@include("partials/main.html")
+    <head>
+        @@include("partials/title-meta.html", {"title": "Techwind"})
+
+        <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        @@include("partials/head-css.html")
+    </head>
+    
+    @@include("partials/body.html")
+        
+        <!-- Start Hero -->
+        <section class="relative h-screen flex justify-center items-center bg-slate-50 dark:bg-slate-800">
+            <div class="w-full mx-auto px-3 sm:px-4 md:px-4 lg:px-[45px] xl:px-[45px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] xl:max-w-[1250px] relative">
+                <div class="md:flex justify-center">
+                    <div class="lg:w-2/5">
+                        <div class="relative overflow-hidden rounded-md bg-white dark:bg-slate-900 shadow dark:shadow-gray-800">
+                            <div class="px-6 py-12 bg-emerald-600 text-center">
+                                <i class="uil uil-check-circle text-white text-8xl"></i>
+                                <h5 class="text-white text-xl tracking-wide uppercase font-semibold mt-2">Success</h5>
+                            </div>
+
+                            <div class="px-6 py-12 text-center">
+                                <p class="text-black font-semibold text-xl dark:text-white">Congratulations! 🎉</p> 
+                                <p class="text-slate-400 mt-4">Your account has been successfully created. <br> Enjoy your journey. Thank you</p>
+                                
+                                <div class="mt-6">
+                                    <a href="index.html" class="py-2 px-5 inline-block tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigobg-indigo-700 text-white rounded-md">Continue</a>
+                                </div>
+                            </div>
+
+                            <div class="text-center p-6 border-t border-gray-100 dark:border-gray-700">
+                                <p class="mb-0 text-slate-400">© <script>document.write(new Date().getFullYear())</script> Techwind. Design with <svg width="1em" height="1em" class="text-red-600 inline-block" viewBox="0 0 24 24"  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <g transform="translate(0 -1028.4)">
+  <path d="m7 1031.4c-1.5355 0-3.0784 0.5-4.25 1.7-2.3431 2.4-2.2788 6.1 0 8.5l9.25 9.8 9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-0.75 0.8-0.75-0.8c-1.172-1.2-2.7145-1.7-4.25-1.7z" fill="#e74c3c"/>
+ </g>
+</svg> by <a href="https://appmint.in/" target="_blank" class="text-reset">appmint</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Hero -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 size-9 text-center bg-indigo-600 text-white leading-9"><i class="uil uil-arrow-up"></i></a>
+        <!-- Back to top -->
+
+        @@include("partials/switcher.html")
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        @@include("partials/script-file.html")
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>

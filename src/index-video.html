@@ -1,0 +1,52 @@
+@@include("partials/dark-theme.html")
+    <head>
+        @@include("partials/title-meta.html", {"title": "Techwind"})
+
+        <!-- Css -->
+        @@include("partials/head-css.html")
+    </head>
+    
+    @@include("partials/body.html")
+        
+        @@include("partials/navbar/nav-video-light.html")
+
+        <section class="relative h-screen flex items-center">
+            <div class="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+                <!-- <iframe src="https://player.vimeo.com/video/33955001?background=1&autoplay=1&loop=1&byline=0&title=0" class="absolute top-1/2 start-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2  -translate-y-1/2 w-screen h-[56.25vw] min-h-screen min-w-[177.77vw]"></iframe> -->
+                <!--Note: Vimeo Embed Background Video-->
+
+                <iframe src="https://www.youtube.com/embed/gJpXlRkW6Fw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" class="absolute top-1/2 start-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2  -translate-y-1/2 w-screen h-[56.25vw] min-h-screen min-w-[177.77vw]"></iframe>
+                <!--Note: Youtube Embed Background Video-->
+            </div>
+            <div class="absolute inset-0 bg-black/40"></div>
+            
+            <div class="w-full mx-auto px-3 sm:px-4 md:px-4 lg:px-[45px] xl:px-[45px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] xl:max-w-[1250px] relative">
+                <div class="grid grid-cols-1">
+                    <img src="assets/images/video/bg.png" alt="">
+                </div>
+            </div>
+
+            <div class="container-fluid relative">
+                <div class="fixed bottom-0 start-0 end-0 pb-8">
+                    <div class="w-full mx-auto px-3 sm:px-4 md:px-4 lg:px-[45px] xl:px-[45px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] xl:max-w-[1250px] relative">
+                        <div class="grid grid-cols-1">
+                            <div class="block">
+                                <div class="flex justify-between">
+                                    <h5 class="text-white text-xl font-semibold">Videos for Ads</h5>
+                                    <a href="video-portfolio.html" class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-white hover:text-white after:bg-white duration-500 ease-in-out">See Videos <svg viewBox="0 0 24 24" stroke-width="0" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor" height="1em" width="1em" id="sf911q9m" class="   inline"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include("partials/switcher.html")
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        @@include("partials/script-file.html")
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>
